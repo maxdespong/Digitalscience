@@ -1,6 +1,6 @@
 def intro():
     import time
-    print("""Welcome to my texted based game called the maze. Be careful because all decisions are final.
+    print("""Welcome to my texted based game called The Maze. Be careful because all decisions are final.
 
 It's a cold autumn afternoon in a small town in Kentucky, you have decided to go on a walk to clear your head. 
 You notice a weird opening in a field but decide to ignore it but as you are walking away something calls your
@@ -23,5 +23,13 @@ Type 'Continue' to got to the next part
             print("Not a valid answer\n")
             intro()
 
-
+print("""┌─────────┬─────────┐ 
+├───┬───╴ ├───┐ ╶─┐ │ 
+├─╴ │ ┌───┘ ╷ │ ╷ │ │ 
+│ ╷ │ └───╴ │ └─┤ │ │ 
+│ │ └─┬─────┴─╴ │ └─┤ 
+│ └─┐ │ ┌─────┬─┴─╴ │ 
+│ ╷ └─┤ │ ╶─┐ │ ╶─┐ │ 
+│ └─┐ ╵ └─╴ │ └─╴ │ │ 
+└───┴───────┴─────┴─┘  """)
 intro()
