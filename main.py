@@ -1,5 +1,5 @@
+import time
 def intro():
-    import time
     print("""Welcome to my texted based game called The Maze. Be careful because all decisions are final.
 
 It's a cold autumn afternoon in a small town in Kentucky, you have decided to go on a walk to clear your head. 
@@ -15,13 +15,10 @@ Type 'Continue' to got to the next part
     """)
     c1 = input()
     time.sleep(2)
-    ans = 'incorrect'
-    while ans == 'incorrect':
-        if c1.upper() == "CONTINUE":
-            ans = 'correct'
-        else:
-            print("Not a valid answer\n")
-            intro()
+    if c1.upper() == "CONTINUE":
+        pass
+    else:
+        intro()
 
 print("""┌─────────┬─────────┐ 
 ├───┬───╴ ├───┐ ╶─┐ │ 
