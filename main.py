@@ -178,7 +178,8 @@ def C10():
     else:
         C10()
 
-def c11():
+
+def C11():
     print("""You arrive at a room and they put you in this chair and connect some machines to the brain. When they flick 
 them on you pass out and then wake up with all the knowledge of the maze and some of the world realising it's a matrix. 
 They take you to a control room and somehow you already know the ins and outs of the controls. You look through everything 
@@ -187,10 +188,117 @@ with staying in the room.
     
 Do you ESCAPE or DONT ESCAPE?
 """)
+    global c11
+    c11 = input()
+    time.sleep(2)
+    if c11.upper() == "ESCAPE":
+        pass
+    elif c11.upper() == "DONT ESCAPE":
+        pass
+    else:
+        C11()
 
 
-def c12():
+def C12():
     print("You successfully got the key card!")
+
+
+def C13():
+    print("""You quickly edit the maze and run out of the control room, through the control building, and out back into 
+the maze where you run through the path you made to a door. You go to try to open the door but the handle won’t budge but 
+you see a keycard reader next to it. 
+""")
+
+
+def C14():
+    print("""The keycard! You quickly swipe it and rush through the door. You are back out where you entered but everything 
+seems different. You walk to your house and your wife looks stunned then she starts crying and hugs you, “What's wrong?” 
+you ask confused because you think that you haven’t been gone for very long. “Two years... You have been missing for two years”
+
+Ending 5: Gone for longer than expected
+""")
+
+
+def C15():
+    print("""“Oh no, I can't get through” you speak to yourself. You start banging on the door but you hear a voice behind 
+you “You betrayed us” you turn around and see a man pointing a gun at your head. The gun fires and splatters your brain across the walls.
+
+Ending 6: Well that blew my mind
+""")
+
+
+def C16():
+    print("""You live your life in the now luxurious control room since you were shown how to edit things in the matrix 
+and you realise on your screen that there is the ability to speak in someone's head and control him. 
+Have I possessed them?
+
+Ending 7: Is that a reference?
+""")
+
+
+def C17():
+    print("""You arrive at a room and they put you in this chair and connect some machines to the brain. When they flick 
+them on you pass out and then wake up with all the knowledge of the maze and some of the world realising it's a matrix. 
+You get taken to a desk in front of the wall of TVs that you saw monitoring the world and changing it however you want. 
+You live the rest of your days working.
+
+Ending 8: The word rulers
+""")
+
+
+def C18():
+    print("""As you are walking down the path you notice a door with a void-looking substance coming out of it. 
+    
+Do you ENTER or KEEP WALKING?""")
+    global c18
+    c18 = input()
+    time.sleep(2)
+    if c18.upper() == "ENTER":
+        pass
+    elif c18.upper() == "KEEP WALKING":
+        pass
+    else:
+        C18()
+
+
+def C19():
+    print("""You open the door as you walk in the liquid starts climbing up your leg and further up your body until it 
+reaches your head and then &(FY&GF *&(*)(UF & T^#*) &^T SUF&
+
+Ending 9: (*^F &DGPF&)&F
+""")
+
+
+def C20():
+    print("""You keep walking till you come to two paths, as you look around the left path has a door at the end but the 
+right has a bright light that is quite far away. 
+
+Do you pick LEFT or RIGHT?""")
+    global c20
+    c20 = input()
+    time.sleep(2)
+    if c20.upper() == "LEFT":
+        pass
+    elif c20.upper() == "RIGHT":
+        pass
+    else:
+        C20()
+
+
+def C21():
+    print("""You find yourself at the door and as you open it and walk through you realise you are back at your house 
+again walking into your room and you quickly look back and only see the rest of your house.
+
+Ending 10: What just happened
+""")
+
+
+def C22():
+    print("""You keep walking and the bright light keeps getting brighter and brighter until you can't see anything else 
+anymore but you keep walking and then you almost black out. You wake up in your bed feeling dazed.
+
+Ending 11: Was it all a dream?
+""")
 
 
 print("""┌─────────┬─────────┐ 
@@ -210,6 +318,7 @@ if c.upper == "RIGHT":
         C3()
         if c3.upper() == "LEFT":
             C4()
+
             if c4.upper() == "STRAIGHT":
                 C5()
                 C67()
@@ -222,11 +331,30 @@ if c.upper == "RIGHT":
             if c9.upper() == "MAZE":
                 C10()
                 if c10.upper() == "STEAL IT":
-                    c12()
+                    C12()
                     inventory.append("Key Card")
                 C11()
+                if c11.upper() == "ESCAPE":
+                    C13()
+                    if "Key card" in inventory:
+                        C14()
+                    else:
+                        C15()
+                elif c11.upper() == "DONT ESCAPE":
+                    C16()
 
             if c9.upper() == "WORLD":
+                C17()
 
     elif c1.upper() == "KEEP WALKING":
         C2()
+elif c.upper == "LEFT":
+    C18()
+    if c18.upper() == "ENTER":
+        C19()
+    elif c18.upper() == "KEEP WALKING":
+        C20()
+        if c20.upper() == "LEFT":
+            C21()
+        elif c20.upper() == "RIGHT":
+            C22()
