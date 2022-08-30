@@ -23,7 +23,7 @@ Which path do you pick?
     time.sleep(2)
     if c.upper() == "RIGHT":
         pass
-    if c.upper() == "LEFT":
+    elif c.upper() == "LEFT":
         pass
     else:
         intro()
@@ -311,50 +311,50 @@ print("""┌─────────┬─────────┐
 │ └─┐ ╵ └─╴ │ └─╴ │ │ 
 └───┴───────┴─────┴─┘  """)
 intro()
-C1()
-if c.upper == "RIGHT":
-    if c1.upper() == "SEARCH":
-        inventory.append("Flashlight")
+if c.upper().strip() == "RIGHT":
+    C1()
+    if c1.upper().strip() == "SEARCH":
         C3()
-        if c3.upper() == "LEFT":
+        if c3.upper().strip() == "LEFT":
             C4()
 
-            if c4.upper() == "STRAIGHT":
+            if c4.upper().strip() == "STRAIGHT":
                 C5()
                 C67()
-            elif c4.upper == "LEFT":
+            elif c4.upper().strip() == "LEFT":
                 C8()
-            elif c4.upper() == "RIGHT":
+            elif c4.upper().strip() == "RIGHT":
                 C23()
-        elif c3.upper() == "RIGHT":
+        elif c3.upper().strip() == "RIGHT":
             C9()
-            if c9.upper() == "MAZE":
+            if c9.upper().strip() == "MAZE":
                 C10()
-                if c10.upper() == "STEAL IT":
+                if c10.upper().strip() == "STEAL IT":
                     C12()
                     inventory.append("Key Card")
                 C11()
-                if c11.upper() == "ESCAPE":
+                if c11.upper().strip() == "ESCAPE":
                     C13()
-                    if "Key card" in inventory:
+                    if "Key Card" in inventory:
                         C14()
                     else:
                         C15()
-                elif c11.upper() == "DONT ESCAPE":
+                elif c11.upper().strip() == "DONT ESCAPE":
                     C16()
 
-            if c9.upper() == "WORLD":
+            if c9.upper().strip() == "WORLD":
                 C17()
 
-    elif c1.upper() == "KEEP WALKING":
+    elif c1.upper().strip() == "KEEP WALKING":
         C2()
-elif c.upper == "LEFT":
+
+elif c.upper().strip() == "LEFT":
     C18()
-    if c18.upper() == "ENTER":
+    if c18.upper().strip() == "ENTER":
         C19()
-    elif c18.upper() == "KEEP WALKING":
+    elif c18.upper().strip() == "KEEP WALKING":
         C20()
-        if c20.upper() == "LEFT":
+        if c20.upper().strip() == "LEFT":
             C21()
-        elif c20.upper() == "RIGHT":
+        elif c20.upper().strip() == "RIGHT":
             C22()
