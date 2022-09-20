@@ -1,6 +1,9 @@
 import time
 
 
+# ill be using def statements so than when I get to directing the code it will look alot nicer
+
+# the def statement bellow plays a part of the story using the print statement embedded
 def intro():
     print("""Welcome to my text-based game called the maze. Be careful because all decisions are final.
 (The decisions are in all capitals and look like THIS)
@@ -18,6 +21,9 @@ looking whereas the RIGHT is darker but doesn't seem like it's been abandoned be
 
 Which path do you pick?
 """)
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c
     c = input()
     time.sleep(2)
@@ -29,15 +35,20 @@ Which path do you pick?
         intro()
 
 
+# Creating an inventory list for a part on the game
 inventory = []
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C1():
     print("""As you are walking through the path you chose on your trip on a pile of clutter, you have minimal vision but 
 it looks like rotten food and old clothing. It smells terrible but there might be something that will help.
  
 Do you SEARCH through it or KEEP WALKING?
      """)
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c1
     c1 = input()
     time.sleep(2)
@@ -49,6 +60,7 @@ Do you SEARCH through it or KEEP WALKING?
         C1()
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C2():
     print("""You venture forward using the rough concrete wall as a guide, you feel your foot loose flooring and realise 
 there is a massive hole ahead of you but it's too late and you fall, losing consciousness when you hit the bottom. As you 
@@ -60,6 +72,7 @@ up in its webs, they eventually cover your head which causes you to suffocate an
 Ending 0: Well that was fast""")
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C3():
     print("""You stick your hand into the pile which feels oddly warm and you find a flashlight which you pick up and turn
 on to continue looking through the pile but you find nothing else. You use the torch to look ahead of you and notice a 
@@ -69,6 +82,9 @@ desires but to the RIGHT  is what your mind craves, pick carefully but no matter
 
 Which door do you choose?
     """)
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c3
     c3 = input()
     time.sleep(2)
@@ -80,11 +96,15 @@ Which door do you choose?
         C3()
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C4():
     print("""You are greeted by 3 paths, STRAIGHT, LEFT, and RIGHT but you are also greeted by a horrible stench carried 
     by a breeze from the right path. 
     
     Which path do you pick?""")
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c4
     c4 = input()
     time.sleep(2)
@@ -98,6 +118,7 @@ def C4():
         C4()
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C5():
     print("""You walk straight for a while and find yourself at an altar, as you look at it you notice some demonic-looking 
     symbols and some ritual gear. As you look more around the altar a door closes the path you came from. Suddenly you hear 
@@ -105,6 +126,9 @@ def C5():
     the freedom will you join us?” 
     
     Do you JOIN the members or DONT JOIN?""")
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c5
     c5 = input()
     time.sleep(2)
@@ -116,6 +140,7 @@ def C5():
         C5()
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C67():
     print("""They quickly rush to you and manhandle you onto the altar and strap you down so you can't move. The leader 
 of the cult moves forward to you chanting something in a language you have never heard before and picking up an ancient-looking 
@@ -127,6 +152,7 @@ Ending 2: A new friend
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C8():
     print("""You walk into an empty-looking room and look around but notice nothing but then a massive door drops down and
 blocks you in. Creaking fills the room and you notice the room getting smaller. You're trapped but you still try to look for 
@@ -137,6 +163,7 @@ Ending 3: Pancake
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C23():
     print("""You walk until you arrive at a long pile of corpses of humans and animals but you notice an exit on the other 
 side of them. You decide to just go for it and start walking through them. You feel the blood seeping in through your 
@@ -147,6 +174,7 @@ Ending 4: There is no peace without sacrifice
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C9():
     print("""You walk into a pitch-black room with the sound of computer fans? and the door slams behind you. The lights 
 turn on and you are greeted to a massive room with books and computers and many people walking around. Although there 
@@ -154,6 +182,9 @@ are many people around you are drawn to the massive wall of tv screens showing c
 “Hello!” a man in a lab coat says to you, “you are now working for us, would you rather monitor the MAZE or the WORLD?”
      
 Which do you choose?  """)
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c9
     c9 = input()
     time.sleep(2)
@@ -165,9 +196,13 @@ Which do you choose?  """)
         C9()
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C10():
     print(
         """“Follow me,” they say before walking off, you see a key card in his back pocket. Do you try to STEAL IT or do you LEAVE IT?""")
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c10
     c10 = input()
     time.sleep(2)
@@ -179,6 +214,7 @@ def C10():
         C10()
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C11():
     print("""You arrive at a room and they put you in this chair and connect some machines to the brain. When they flick 
 them on you pass out and then wake up with all the knowledge of the maze and some of the world realising it's a matrix. 
@@ -188,6 +224,9 @@ with staying in the room.
     
 Do you ESCAPE or DONT ESCAPE?
 """)
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c11
     c11 = input()
     time.sleep(2)
@@ -199,10 +238,12 @@ Do you ESCAPE or DONT ESCAPE?
         C11()
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C12():
     print("You successfully got the key card!")
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C13():
     print("""You quickly edit the maze and run out of the control room, through the control building, and out back into 
 the maze where you run through the path you made to a door. You go to try to open the door but the handle won’t budge but 
@@ -210,6 +251,7 @@ you see a keycard reader next to it.
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C14():
     print("""The keycard! You quickly swipe it and rush through the door. You are back out where you entered but everything 
 seems different. You walk to your house and your wife looks stunned then she starts crying and hugs you, “What's wrong?” 
@@ -219,6 +261,7 @@ Ending 5: Gone for longer than expected
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C15():
     print("""“Oh no, I can't get through” you speak to yourself. You start banging on the door but you hear a voice behind 
 you “You betrayed us” you turn around and see a man pointing a gun at your head. The gun fires and splatters your brain across the walls.
@@ -227,6 +270,7 @@ Ending 6: Well that blew my mind
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C16():
     print("""You live your life in the now luxurious control room since you were shown how to edit things in the matrix 
 and you realise on your screen that there is the ability to speak in someone's head and control him. 
@@ -236,6 +280,7 @@ Ending 7: Is that a reference?
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C17():
     print("""You arrive at a room and they put you in this chair and connect some machines to the brain. When they flick 
 them on you pass out and then wake up with all the knowledge of the maze and some of the world realising it's a matrix. 
@@ -246,10 +291,14 @@ Ending 8: The word rulers
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C18():
     print("""As you are walking down the path you notice a door with a void-looking substance coming out of it. 
     
 Do you ENTER or KEEP WALKING?""")
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c18
     c18 = input()
     time.sleep(2)
@@ -261,19 +310,24 @@ Do you ENTER or KEEP WALKING?""")
         C18()
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C19():
     print("""You open the door as you walk in the liquid starts climbing up your leg and further up your body until it 
 reaches your head and then &(FY&GF *&(*)(UF & T^#*) &^T SUF&
 
-Ending 9: (*^F &DGPF&)&F
+Ending 9: (*^F &DPF&)&F
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C20():
     print("""You keep walking till you come to two paths, as you look around the left path has a door at the end but the 
 right has a bright light that is quite far away. 
 
 Do you pick LEFT or RIGHT?""")
+    # this piece of code below creates global variable, then uses an input statement to add a value to the variable.
+    # Then the time sleep function helps the code run more smoothly. Then there are if statements so that only the allowed answers will be accepted
+    # if the allowed answers aren't inputted it will replay the code for the choice
     global c20
     c20 = input()
     time.sleep(2)
@@ -285,6 +339,7 @@ Do you pick LEFT or RIGHT?""")
         C20()
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C21():
     print("""You find yourself at the door and as you open it and walk through you realise you are back at your house 
 again walking into your room and you quickly look back and only see the rest of your house.
@@ -293,6 +348,7 @@ Ending 10: What just happened
 """)
 
 
+# the def statement bellow plays a part of the story using the print statement embedded
 def C22():
     print("""You keep walking and the bright light keeps getting brighter and brighter until you can't see anything else 
 anymore but you keep walking and then you almost black out. You wake up in your bed feeling dazed.
@@ -310,6 +366,7 @@ print("""┌─────────┬─────────┐
 │ ╷ └─┤ │ ╶─┐ │ ╶─┐ │ 
 │ └─┐ ╵ └─╴ │ └─╴ │ │ 
 └───┴───────┴─────┴─┘  """)
+# This is where I start my code and use if statements and my def variables to properly navigate the story
 intro()
 if c.upper().strip() == "RIGHT":
     C1()
